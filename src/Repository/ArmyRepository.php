@@ -41,34 +41,9 @@ class ArmyRepository extends ServiceEntityRepository
 
     public function getObjectList(): array
     {
-        $army1 = new class {
-            public function getId()
-            {
-                return 1;
-            }
-
-            public function getName()
-            {
-                return "Necron";
-            }
-        };
-
-        $army2 = new class {
-            public function getId()
-            {
-                return 2;
-            }
-
-            public function getName()
-            {
-                return "Space Marines";
-            }
-        };
-        return [$army1, $army2];
-
-        // return $this->createQueryBuilder("army")
-        //     ->getQuery()
-        //     ->getResult();
+        return $this->createQueryBuilder("army")
+            ->getQuery()
+            ->getResult();
     }
 
     public function getObjectById(int $id): ?Army

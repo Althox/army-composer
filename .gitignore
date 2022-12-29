@@ -9,4 +9,5 @@
 /vendor/
 /.logs/nginx/*.*
 /.logs/php/*.*
+/.data/backup/*.*
 ###< symfony/framework-bundle ###
