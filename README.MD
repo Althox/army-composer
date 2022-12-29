@@ -1,5 +1,5 @@
-# Hammer Armory
-A repo for setting up a Wargaming Armory backend website.
+# Composer Armory
+A repo for setting up a Wargaming Armory backend.
 
 The project is built with Docker and Symfony/Doctrine.
 
@@ -12,3 +12,4 @@ Project is still in development...
 ## Entity Content
 * Army
 * Unit
+* UnitType

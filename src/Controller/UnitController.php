@@ -22,7 +22,7 @@ class UnitController extends AbstractController
             $unitList[] = [
                 'id' => $unit->getId(),
                 'name' => $unit->getName(),
-                'unit_type_id' => $unit->getTypeId()
+                'unit_type_id' => $unit->getUnitTypeId()
             ];
         }
 

@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y \
 # RUN pecl install memcached-3.2.0
 
 # Install & configure extensions
-RUN docker-php-ext-install pgsql pdo_pgsql xdebug \
-    && docker-php-ext-install -j$(nproc) gd \
+RUN docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install pgsql pdo_pgsql \
     && docker-php-ext-configure gd --with-freetype --with-jpeg
 
 # Get Composer

@@ -17,6 +17,7 @@ class Unit
     private ?string $name = null;
 
     #[ORM\Column]
+    #[ORM\ManyToOne(targetEntity: UnitType::class, inversedBy: 'Unit')]
     private ?int $unit_type_id = null;
 
     #[ORM\Column(length: 255, nullable: true)]
