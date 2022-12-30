@@ -1,4 +1,4 @@
-# Composer Armory
+# Army Composer
 A repo for setting up a Wargaming Armory backend.
 
 The project is built with Docker and Symfony/Doctrine.
