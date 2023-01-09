@@ -1,13 +1,2 @@
-
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
-/var/
-/vendor/
-/.logs/nginx/*.*
-/.logs/php/*.*
-/.data/backup/*.*
-###< symfony/framework-bundle ###
+.data/backup/*
+.data/database/*

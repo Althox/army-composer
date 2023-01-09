@@ -1,5 +1,5 @@
 #Start the containers
-docker compose --env-file .env up -d
+docker compose up --build --force-recreate -d
 
 #Import content
 # docker exec army-composer-php-1 bash -c "php bin/console make:migration"
