@@ -1,6 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import IntroPage from './InfoPage';
 import Navbar from './Navbar';
+import Head from 'next/head'
+
 
 const App = ({ initialData }) => {
   if (initialData === undefined) {
@@ -25,6 +27,9 @@ const App = ({ initialData }) => {
 
   return (
     <div>
+      <Head>
+        <title>Army Composer</title>
+      </Head>
       <Navbar/>
       <IntroPage />
       <button onClick={handleClick} className='btn btn-primary'>Get armies</button>
