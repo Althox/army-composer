@@ -11,6 +11,4 @@ npm run dev
     Runs the built app in production mode.
 
 We suggest that you begin by typing:
-
-  cd army-composer-site2
   npm run dev
